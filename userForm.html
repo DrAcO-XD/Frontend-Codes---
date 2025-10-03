@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+</head>
+<body>
+    <form action = "#" method = "get">
+        <fieldset style = "background-color: antiquewhite;">
+            <legend><i><strong>Book Store</strong></i></legend>
+            <label for = "name">Name : </label>
+            <input type = "text" id = "name" name = "name" placeholder = "Enter Your Name" required>
+            <br><br>
+            <label for = "password">Password : </label>
+            <input type = "password" id = "password" name = "password" placeholder = "Enter Your Password" required>
+            <br><br>
+            <label for = "address">Address : </label>
+            <textarea id = "address" name = "address" rows = "4" cols = "20" placeholder = "Enter your address" required></textarea>
+            <br><br>
+            <label for = "type">Type : </label>
+            <input type = "radio" id = "type" unchecked name = "type" value = "Novels" required>
+            <label for = "Novels">Novels</label>
+            <input type = "radio" id = "type" name = "type" value = "Science" required>
+            <label for = "Science">Science</label>
+            <input type = "radio" id = "type" name = "type" value = "Comics" required>
+            <label for = "Comics">Comics</label>
+            <input type = "radio" id = "type" name = "type" value = "Stories" required>                         
+            <label for = "Stories">Stories</label>
+            <br><br>
+            <label for ="fav_author">Favoutite Author : </label>
+            <select id = "fav_author" name = "fav_author"required>
+                <option value = "">--- Please Select Your Option ---</option>
+                <optgroup label = "Novels">
+                    <option value = "Dan Brown">Dan Brown</option>
+                    <option value = "Agatha Christie">Agatha Christie</option>
+                    <option value = "J.K. Rowling">J.K. Rowling</option>
+                </optgroup>
+                <optgroup label = "Science">
+                    <option value = "Stephen Hawking">Stephen Hawking</option>
+                    <option value = "Carl Sagan">Carl Sagan</option>
+                    <option value = "Richard Dawkins">Richard Dawkins</option>
+                </optgroup>
+                <optgroup label = "Comics">
+                    <option value = "Stan Lee">Stan Lee</option>
+                    <option value = "Frank Miller">Frank Miller</option>
+                    <option value = "Alan Moore">Alan Moore</option>
+                </optgroup>
+                <optgroup label = "Stories">
+                    <option value = "R.L. Stine">R.L. Stine</option>
+                    <option value = "Edgar Allan Poe">Edgar Allan Poe</option>
+                    <option value = "Ray Bradbury">Ray Bradbury</option>
+                </optgroup>  
+            </select>
+            <br><br>
+             <label for = "last_read">Last Read Book : </label>
+                <textarea id = "last_read" name = "last_read" rows = "4" cols = "20" placeholder = "Comment your review of your last read book" required></textarea>
+        </fieldset>
+        <br>
+        <input type = "submit" value = "Submit">
+        <input type = "reset" value = "Reset">
+    </form>
+</body>
+</html>
