@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PB 167</title>
+</head>
+<body>
+    <h4 align = "center">Registration Form</h4>
+    <table border = "1" align = "center" cellpadding = "20" cellspacing = "2" style = "background-color: rgb(230, 230, 230);">
+        <form action = "#" method = "post">
+            <tr>
+                <td>
+                <label for = "userName">Enter Your First Name</label></td>
+                <td><input type = "name" id = "userName" name = "userName" placeholder = "enter your first name" required> 
+            </tr>
+            <tr>
+                <td>
+                    <label for = "lastName">Enter Your Last Name</label>
+                </td>
+                <td><input type = "name" id = "lastName" name = "lastName" required placeholder = "enter your last name"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for = "password">Enter Your Password</label>
+                </td>
+                <td>
+                    <input type = "password" id = "password" name = "password" placeholder = "enter your password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for = "renterPassword">Re-Enter Your Password</label>
+                </td>
+                <td>
+                    <input type = "password" id = "renterPassword" name = "renterPassword" required placeholder = "re-enter your password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for = "email">Enter Your Email</label>
+                </td>
+                <td>
+                    <input type = "email" ud = "email" name = "email" required placeholder = "enter your email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for = "mobileNumber">Enter Your Mobile Number</label>
+                </td>
+                <td>
+                    <input type = "tel" id = "mobileNumber" name = "mobileNumber" required placeholder = "enter your mobile number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for = "address">Enter Your Address</label>
+                </td>
+                <td>
+                    <textarea rows = "5" cols = "30" required placeholder = "enter your address" id = "address" name = "address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for = "gender">Select Your Gender</label>
+                </td>
+                <td>
+                    <label for = "gender">Male</label>
+                    <input type = "radio" id = "gender" name = "gender" value = "male" required>
+                    <label for = "gender">Female</label>
+                    <input type = "radio" id = "gender" name = "gender" value = "Female" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <label for = "hobbies">Select Your Hobbies</label>
+                </td>
+                <td>
+                    <label for = "hobbies">hobby1</label>
+                    <input type = "checkbox" id = "hobbies" name = "hobbies" value = "hobby1">
+                    <label for = "hobbies">hobby2</label>
+                    <input type = "checkbox" id = "hobbies" name = "hobbies" value = "hobby2">
+                    <label for = "hobbies">hobby3</label>
+                    <input type = "checkbox" id = "hobbies" name = "hobbies" value = "hobby3">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Your DOB</td>
+                <td>
+                    <input type = "date" id = "dob" name = "dob" required min = "2000-01-01" max = "2025-12-31">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for = "country">Select Your Country</label>
+                </td>
+                <td>
+                    <select id = "country" name = "country" required>
+                        <option value = "">-- Select Your Country --</option>
+                        <option value = "India">India</option>
+                        <option value = "Pakistan">Pakistan</option>
+                        <option value = "China">China</option>
+                        <option value = "United States Of America">United States Of America</option>
+                        <option value = "Australia">Australia</option>
+                        <option value = "Canada">Canada</option>
+                        <option value = "Portugal">Portugal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for = "files">Upload Your Pic</label>
+                </td>
+                <td>
+                    <input type = "file" accept = ".pdf,.png,.jpeg,.jpg" id = "files" name = "files" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2" align = "center">
+                <input type = "submit" name = "submit" value = "Save My Data">
+                <input type = "reset" name = "reset" value = "Reset Data">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
