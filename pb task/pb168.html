@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PB 168</title>
+</head>
+<body>
+    <h3 align = "center">PB 168 Form</h3>
+    <form action = "#" method = "post">
+        <fieldset style = "background-color: lightgray;">
+            <legend align = "center"><b><i>Advance Style Form</i></b></legend>
+            <label for = "mobileNumber">Phone Number : </label>
+            <input type = "tel" id = "mobileNumber" name = "mobileNumber" required maxlength = "10">
+            <br><br>
+            <label for = "gender">Gender : </label>
+            <input type = "radio" id = "gender" name = "gender" value = "male" required>
+            <label for = "gender">Male</label>
+            <input type = "radio" id = "gender" name = "gender" value = "female" required>
+            <label for = "gender">Female</label>
+            <br><br>
+            <label for = "hobbies">Hobbies : </label>
+            <input type = "checkbox" id = "hobbies" name = "hobbies" value = "hobby1">
+            <label for = "hobbies">Hobby1</label>
+            <input type = "checkbox" id = "hobbies" name = "hobbies" value = "hobby2">
+            <label for = "hobbies">Hobby2</label>
+            <input type = "checkbox" id = "hobbies" name = "hobbies" value = "hobby3">
+            <label for = "hobbies">Hobby3</label>
+            <input type = "checkbox" id = "hobbies" name = "hobbies" value = "hobby4">
+            <label for = "hobbies">Hobby4</label>
+            <br><br>
+            <label for = "files">Upload Your Files : </label>
+            <input type = "file" id = "files" name = "files" required accept = ".pdf,.docx">
+            <br><br>
+            <label for = "dob">Date Of Birth : </label>
+            <input type = "date" id = "dob" name = "dob" required min = "2000-01-01" max = "2025-12-31">
+            <br><br>
+            <label for = "age">Age : </label>
+            <input type = "number" id = "age" name = "age" min = "0" max = "110" step="1">
+            <br><br>
+            <label for = "numericAge">Select Your Age : </label>
+            18
+            <input type = "range" id = "numericAge" name = "numericAge" value = "18" min = "18" max = "28" step = "1" required>
+            28
+            <br><br>
+            <label for = "color">Select Your Colour : </label>
+            <input type = "color" id = "color" name = "color" value = "#0000FF" required>
+            <br><br>
+            <label for="browser">Browser : </label>
+            <input list="browsers" id="browser" name="browser" placeholder="Type to see suggestions">
+            <datalist id="browsers">
+                <option value="Google Chrome">
+                <option value="Mozilla Firefox">
+                <option value="Microsoft Edge">
+                <option value="Safari">
+                <option value="Opera">
+                <option value="Brave">
+                <option value="Vivaldi">
+            </datalist>
+            <br><br>
+            <input type = "submit" value = "Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
