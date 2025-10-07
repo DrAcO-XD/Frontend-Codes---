@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PB 173</title>
+</head>
+<body>
+    <form action = "#" method = "get">
+        <fieldset>
+            <legend>Customer Detail</legend>
+            <label for = "name"><strong>Name: </strong></label>
+            <input type = "name" id = "name" name = "uname" placeholder = "Enter Your Name" required>
+            <br><br>
+            <label for = "number"><strong>Number:</strong></label>
+            <input type = "tel" id = "number" name = "number" placeholder = "Enter Your Number" required>
+            <br><br>
+            <label for = "email"><strong>Email:</strong></label>
+            <input type = "email" id = "email" name = "u-email" placeholder = "Enter Your Email" required>
+            <br><br>
+            <label for = "pizzaName"><strong>Pizza Name:</strong></label>
+            <input type = "checkbox" id = "pizzaName" name = "pizzaName" value = "simple-veg">
+            <label for = "pizzaName">Simple Veg.</label>
+            <br>
+            <pre>
+            <input type = "checkbox" id = "pizzaName" name = "pizzaName" value = "7-cheese"> <label for = "pizzaName" style = "font-family: initial;">7 Cheese</label>
+            </pre>
+            <label for = "outletCity"><strong>Outlet City:</strong></label>
+            <select id = "outletCity" name = "outletCity" required>
+                <option value = "" selected disabled hidden>-- List Of Area --</option>
+                <option value = "vejalpur">Vejalpur</option>
+                <option value = "juhapura">Juhapura</option>
+                <option value = "sarkhej">Sarkhej-Okaf</option>
+            </select>
+            <br><br>
+            <label for = "orderDate"><strong>Order Date:</strong></label>
+            <input type = "date" id = "orderDate" name = "orderDate" min = "2023-01-01" max = "2025-12-31" required>
+            <br>
+            <br>
+            <label for = "comment"><strong><em>Comment:</em></strong></label>
+            <textarea rows = "4" cols = "20" placeholder = ""></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Scale Order Pizza</legend>
+            <table border = "1" cellpadding = "10" rules = "all" frame = "void">
+                <tr>
+                    <td>
+                        <strong>Scale</strong>
+                    </td>
+                    <td>
+                        <strong>Good</strong>
+                    </td>
+                    <td>
+                        <strong>Avg.</strong>
+                    </td>
+                    <td>
+                        <strong>Bad</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Quality</strong></td>
+                    <td>
+                        <input type = "radio" name = "quality" value = "good" required>
+                    </td>
+                    <td>
+                        <input type = "radio" name = "quality" value = "average" required>
+                    </td>
+                    <td>
+                        <input type = "radio" name = "quality" value = "bad" required>
+                    </td>
+                </tr>
+                 <tr>
+                    <td><strong>Quantity</strong></td>
+                    <td>
+                        <input type = "radio" name = "quantity" value = "good" required>
+                    </td>
+                    <td>
+                        <input type = "radio" name = "quantity" value = "average" required>
+                    </td>
+                    <td>
+                        <input type = "radio" name = "quantity" value = "bad" required>
+                    </td>
+                </tr>
+                 <tr>
+                    <td><strong>Freshness</strong></td>
+                    <td>
+                        <input type = "radio" name = "freshness" value = "good" required>
+                    </td>
+                    <td>
+                        <input type = "radio" name = "freshness" value = "average" required>
+                    </td>
+                    <td>
+                        <input type = "radio" name = "freshness" value = "bad" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>
+                            Overall Rating
+                        </strong>
+                    </td>
+                    <td colspan="3">
+                        0<input type = "range" min = "0" max = "10" step = "1" required>10
+                    </td>
+                </tr>
+            </table>
+            <div align = "center">
+            <input type = "submit" value = "Submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
